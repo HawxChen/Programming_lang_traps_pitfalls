@@ -17,3 +17,7 @@ int main() {
     
     return 0;
 }
+
+/*
+ *Thanks for yoshijava's discussion.
+ */

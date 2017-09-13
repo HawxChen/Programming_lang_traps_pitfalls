@@ -1,5 +1,5 @@
 // Copyright (c) 2015 Elements of Programming Interviews. All rights reserved.
-// Show some inconsistent bugs through API usage!
+// Show the conflict through API usage!
 
 #include <cassert>
 #include <vector>

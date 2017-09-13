@@ -8,12 +8,15 @@
 
 using namespace std;
 
+/*
+ * Verified by gcc version 5.4.0, clang-802.0.41
+ */
 // @include
 int bsearch_api(int t, const vector<int>& A) {
 
     /* If the input vector is not sorted, then we should use find.
      * If ... is SORTED, then we can use lower_bound().
-     * However, the behavior has conflicts with the well-known book: The C++ Standard Library.
+     * However, the behavior of lower_bound has conflicts between runtime and the well-known book: The C++ Standard Library 2nd Edition.
      * [Conflict] In the book's page 611, All algorithms (upper_bound and lower_bound) return "end" if there is NO such value.
      *          
      * PS: from online manual: http://www.cplusplus.com/reference/algorithm/lower_bound/ 

@@ -19,7 +19,8 @@ int bsearch_api(int t, const vector<int>& A) {
      * However, the behavior of lower_bound has conflicts between runtime and the well-known book: The C++ Standard Library 2nd Edition.
      * [Conflict] In the book's page 611, All algorithms (upper_bound and lower_bound) return "end" if there is NO such value.
      *          
-     * PS: from online manual: http://www.cplusplus.com/reference/algorithm/lower_bound/ 
+     * PS: from online manual: http://www.cplusplus.com/reference/algorithm/lower_bound/
+     *     Returns an iterator pointing to the first element in the range [first,last) which does not compare less than val.
      *     Return value:
      *       An iterator to the lower bound of val in the range.
      *       If all the element in the range compare less than val, the function returns last.

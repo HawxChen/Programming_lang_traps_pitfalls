@@ -27,22 +27,10 @@ int bsearch_api(int t, const vector<int>& A) {
      */
     auto iter = lower_bound(A.begin(), A.end(), t);
 
-#if 0
-    /*Inconsistency
-     * use upper bound!
-     * A = {2, 2, 2};
-     * assert(-1 == bsearch(3, A));
-     * the lowber bound will return iter of A[0] instead of A.end().
-     */
-     return iter == A.end() ? -1 : distance(A.begin(), iter);
-#else
-    //Corrected check.
     return iter == A.end() ? -1 : *iter != t ? -1 : distance(A.begin(), iter);
-#endif
 }
 
 int bsearch(int t, const vector<int>& A) {
-//    return bsearch_handmade(t, A);
     return bsearch_api(t, A);
 }
 // @exclude

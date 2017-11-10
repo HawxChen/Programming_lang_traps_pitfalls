@@ -13,6 +13,7 @@ void p_max_minimum(vector<int>&v, int key) {
     int dist = distance(v.begin(), low);
     cout << "the number of items before this key: " << *low << " is " << dist << endl;
     int result;
+    /* Correct but too complicated
     do {
         if(dist == 0) { //important!
             result = dist;
@@ -26,6 +27,15 @@ void p_max_minimum(vector<int>&v, int key) {
         } 
         result = dist - 1;
     } while (0);
+    cout << "result: " << result << endl;
+    */
+
+    if(dist != 0) { //important!
+        result = dist - 1;
+    } else {
+        result = -1; // No value is fewer than key
+    } 
+
     cout << "result: " << result << endl;
     cout << "---------------------------------------------------------------------" << '\n';
 }

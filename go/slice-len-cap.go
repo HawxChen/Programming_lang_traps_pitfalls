@@ -1,7 +1,7 @@
 //Source: https://tour.golang.org/moretypes/11
 
 /*
-* 1. Use C thinking.
+* 1. Use C thinking. Focus on s' inherited status changes.
 * 2. := is an initialization operator in Go,
 *    which does not exist in Python
 * 3. = is the reference, pointer assignment,
